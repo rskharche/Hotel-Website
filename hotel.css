@@ -1,0 +1,362 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+a{
+	text-decoration:none;
+}
+
+h6{
+	font-family:Monotype Corsiva;
+	font-size:20px;
+	font-weight:800;
+}
+.main-btn{
+	font-size:20px;
+	font-weight:500;
+	text-transform:uppercase;
+	background-color:transparent;
+	border:3px solid blue;
+	border-radius:20%;
+	padding:5px;
+	display:inline-block;
+	line-height:30px;
+	transition:all 0.3s ease-out 0s;
+	margin-top:17px;
+}
+.main-btn:hover{
+	background-color:#E2BC4F;
+	border-color:black;
+	color:white;
+}
+.header-wrapper{
+	background:#A4C450;
+	
+	
+}
+.header-wrapper .nav-item{
+	margin:20px;
+}
+.header-wrapper .nav-item .nav-link:hover{
+	color:#E2BC4F;
+}
+.banner{
+	background-image:url("bgg.jpg");
+	 height:700px;
+	 background-size:100%;
+	 margin-top:0px;
+	 background-repeat:no-repeat;
+	 
+}
+.b1, .b2{
+	position:relative;
+	top:200px;
+	color:#4B2435;
+}
+.fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+.bannerhead{
+	position:relative;
+	text-align:center;
+	top:90px;
+	font-family:Georgia;
+	color:white;
+}
+.booking-area{
+	background:#A4C450;
+	box-shadow:5px 5px 0 rgb(0 0 0 /10%);
+	margin-top:-50px;
+	padding:30px 20px;
+	position:relative;
+	z-index:2;
+}
+#gold{
+	color:#B68B10;
+	font-family:Cambria Math;
+}
+.about-wrapper{
+	padding-top:50px;
+}
+.rooms-wrapper .rooms-items{
+	position:relative;
+	overflow:hidden;
+}
+.rooms-wrapper .rooms-items img{
+	width:100%;
+	-webkit-transition:all 480ms ease-in 0s;
+	transition:all 400ms ease-in 0s;
+}
+.rooms-wrapper .rooms-items:hover img{
+	-webkit-transform:scale3d(1.05, 1.05, 1.05);
+	transform:scale3d(1.05, 1.05, 1.05);
+}
+.rooms-wrapper .rooms-items::before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:black;
+	opacity:0;
+	z-index:1;
+	-webkit-transition:all 400ms ease-in 0s;
+	transition:all 400ms ease-in 0s;
+}
+.rooms-wrapper .rooms-items:hover::before{
+	opacity:0.6;
+}
+.rooms-wrapper .room-item-wrap{
+	position:absolute;
+	left:10px;
+	right:10px;
+	top:50%;
+	transform:translateY(-50%);
+	z-index:1;
+	
+}
+.rooms-wrapper .rooms-items .room-content{
+	border:5px solid white;
+	padding:5px 2px;
+	-webkit-transform:scale3d(1.2, 1.2, 1.2);
+	transform:scale3d(1.2, 1.2, 1.2);
+	transition:all 500ms ease-in 0s;
+	opacity:0;
+}
+.rooms-wrapper .rooms-items:hover .room-content{
+	opacity:1;
+	-webkit-transform:scale3d(1,1,1);
+	transform:scale3d(1,1,1);
+}
+a{
+	text-decoration:none;
+	
+}
+/* services */
+.service-item-wrap{
+	background-color:white;
+}
+.service-menu-area ul li a{
+	display:block;
+	margin-bottom:45px;
+	
+}
+.service-menu-area ul li a .service-icon{
+	height:90px;
+	width:90px;
+	background-color:#B26D20;
+	line-height:90px;
+	text-align:center;
+	border-radius:100%;
+	float:left;
+	-webkit-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+.web{
+	position:relative;
+	left:90px;
+}
+.service-menu-area ul li a .service-icon:hover,
+.service-menu-area ul li a active .service-icon{
+	background-color:black;
+	box-shadow:2px rgb(34 30 31 / 40%)
+}
+.service-menu-area ul li:nth-child(1){
+	margin-left:-34px;
+}
+.service-menu-area ul li:nth-child(2){
+	margin-left:-77px;
+}
+.service-menu-area ul li:nth-child(3){
+	margin-left:-115px;
+}
+.service-menu-area ul li:nth-child(4){
+	position:relative;
+	right:160px;
+}
+#ser-l{
+	position:relative;
+	left:10px;
+	top:5px;
+}
+.service-menu-area ul li a span{
+	color:#B68B10;
+}
+.service-item-wrap{
+	background-color:#F0F0F0;
+}
+
+.counter::before{
+	top:0;
+	left:0;
+	content:'';
+	width:100%;
+	height:100%;
+	background-color:black;
+	opacity:0.5;
+	z-index:1;
+}
+.counter h1,
+.counter p{
+	position:absolute;
+	z-index:3;
+	color:white;
+}
+
+
+.counter::before,
+.counter::after
+{
+	content: '';
+	background-image: url("./img/counter-bg.webp");
+	background-size: cover;	
+}
+
+.counter::before
+{
+	position: fixed;
+	width: 100%;
+	z-index: -1;
+}
+.team-wrapper .card{
+	position:relative;
+	overflow:hidden;
+}
+.team-wrapper .team-info{
+	background-color:#B1E82B;
+	position:absolute;
+	width:100%;
+	bottom:0;
+	text-align:center;
+	padding:5px;
+	margin-bottom:-20px;
+	transition:all 0.3s ease-in-out;
+	
+}
+.team-wrapper .card:hover .team-info{
+		margin-bottom:60px;
+}
+.team-wrapper .team-info .social-network{
+	-webkit-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+	padding:20px;
+	margin:-10px -10px -80px;
+	background-color:black;
+	list-style:none;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+}
+
+.price-wrapper .card{
+	box-shadow:5px 2px rgb(34 30 31 / 40%);
+	-webkit-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+	cursor:pointer;
+}
+.price-wrapper .card:hover{
+	background-color:#B1E82B;
+}
+.blog-wrapper .blog-content{
+	margin:-55px 0 0 70px;
+	box-shadow:5px 2px rgb(34 30 31 / 40%);
+}
+.our-partner-slider{
+	background-color:#EBECE8;
+	padding:30px 0;
+}
+.footer-wrapper{
+	background-color:black;	
+}
+.footer-wrapper h5{
+	color:white;
+	margin-bottom:10px;
+}
+.footer-wrapper ul li{
+	margin-bottom:5x;
+	list-style:none;
+}
+.footer-wrapper .contact-info{
+	color:#B1E82B;
+}
+.footer-wrapper .link-widget li a,
+.footer-wrapper p{
+	color:grey;
+	font-size:15px;
+	padding-left:8px;
+	position:relative;
+	-webkit-transition:all 0.3s ease-out 0s;
+	transition:all 0.3s ease-out 0s;
+	
+}
+.footer-wrapper .link-widget li a:before{
+	
+	font-family:"Font Awesome 5 Free";
+	font-weight:900;
+	position:absolute;
+	left:5px;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.footer-wrapper .link-widget li a:hover{
+	color:#B1E82B;
+	margin-left:15px;
+}
+.footer-wrapper .copyright-section{
+	background-color:#2CAEA8;
+	text-align:center;
+	padding:10px 0 5px;
+}
+
+
+@media only screen and (max-width:700px){
+	
+.banner{
+	background-image:url("bgg2.jpg");
+	 background-size:100% 100%;
+	 
+}
+	.bannerhead h1{
+		font-size:50px;
+	}
+	.b1, .b2{
+		position:relative;
+		top:120px;
+		color:#EAFFB2;
+	}
+	.about-btn{
+		position:relative;
+		left:130px;
+		top:-17px;
+		height:
+	}
+	.tav-img{
+		width:200px;
+		
+	}
+	.service-item-wrap{
+		width:100%;
+	background-color:white;
+}
+.service-menu-area ul li a{
+
+	width:100px;
+	
+}
+	.as h6 h3{
+		font-size:20px;
+	width:100px;
+}
+.service-menu-area{
+	width:300px;
+}
+}
